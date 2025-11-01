@@ -1,0 +1,57 @@
+# Node modules
+node_modules/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+# Build output
+dist/
+build/
+# Dependency directories
+bower_components/
+jspm_packages/
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+# Temporary files
+*.tmp
+*.swp
+# Coverage directory
+coverage/
+.nyc_output/
+# Test output
+test-results/
+*.seed
+# Generated files
+*.gen.js
+*.min.js
+# Package lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+# Miscellaneous
+*.bak
+*.old
+*.orig
+*.rej
+*.log.*
+*.cache/
+*.tsbuildinfo
+# Docker files
+docker-compose.override.yml
+docker-compose.dev.yml
+docker-compose.test.yml
+# Kubernetes files
+kube/
+kustomization.yaml
+*.kubeconfig
+# Secrets
+secrets/
