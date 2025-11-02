@@ -27,16 +27,21 @@ const PostLists = ({ isPosting, onStopPosting }) => {
           <NewPost onCancel={onStopPosting} addPostHandler={addPostHandler} />
         </Modal>
       )}
-      <ul className={classes.posts}>
-        {post.length > 0 &&
-          post.map((post, postId) => (
+
+      {post.length > 0 && (
+        <ul className={classes.posts}>
+          {post.map((post, postId) => (
             <Post key={postId} author={post.author} text={post.body} />
           ))}
-          {post.length===0 && <div style={{textAlign:'center',color:'AppWorkspace'}}>
-            <h2>There is no post Yet!</h2>
-            <p>start something nice...</p>
-            </div>}
-      </ul>
+        </ul>
+      )}
+
+      {post.length === 0 && (
+        <div style={{ textAlign: "center", color: "AppWorkspace" }}>
+          <h2>There is no post Yet!</h2>
+          <p>start something nice...</p>
+        </div>
+      )}
     </>
   );
 };
