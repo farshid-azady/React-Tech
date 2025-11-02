@@ -24,6 +24,7 @@ const NewPost = ({onCancel,addPostHandler}) => {
   }
   return (
     <form className={classes.form} onSubmit={submitHandler}>
+      
       <p>
         <label htmlFor="body">Text</label>
         <textarea id="body" required rows={3} onChange={ChangeBodyHandler}/>

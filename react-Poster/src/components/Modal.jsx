@@ -6,6 +6,9 @@ const Modal = ({children ,onClose}) => {
     <div className={classes.backdrop} onClick={onClose}/>
     <dialog open className={classes.modal}>{children}</dialog>
     
+    
+    
+    
 
    </>
   )
