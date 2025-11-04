@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-const Player = ({ initialName, symbol }) => {
+// Accept isActive so the parent can mark the active player
+const Player = ({ initialName, symbol, isActive }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [playerName, setPlayerName] = useState(initialName);
   function handleEditClick() {
@@ -16,7 +17,7 @@ const Player = ({ initialName, symbol }) => {
     );
   }
   return (
-    <li>
+    <li className={isActive ? "active" : undefined}>
       <span className="player">
         {playerContent}
         <span className="player-symbol">{symbol}</span>
